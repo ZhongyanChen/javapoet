@@ -49,7 +49,7 @@ public final class FileWritingTest {
   private final TestFiler filer = new TestFiler(fs, fsRoot);
 
   @Test public void pathNotDirectory() throws IOException {
-    TypeSpec type = TypeSpec.classBuilder("Test").build();
+    //TypeSpec type = TypeSpec.classBuilder("Test").build();
     JavaFile javaFile = JavaFile.builder("example", type).build();
     Path path = fs.getPath("/foo/bar");
     Files.createDirectories(path.getParent());
